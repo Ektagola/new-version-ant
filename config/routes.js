@@ -18,7 +18,6 @@ export default [
     name: 'welcome',
     icon: 'smile',
     component: './Welcome',
-    access: 'canUser'
   },
   {
     path: '/admin',
@@ -34,11 +33,18 @@ export default [
     access: 'canAdmin',
   },
   {
+    name: 'Developer',
+    icon: 'user',
+    path: '/developer',
+    component: './developer',
+    access: 'canDeveloper',
+  },
+  {
     name: 'User',
     icon: 'user',
     path: '/users',
     component: './users',
-    access: 'canAdmin',
+    access: 'canUser',
   },
   {
     path: '/',
